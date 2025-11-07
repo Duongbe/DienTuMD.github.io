@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image\z7120951345012_4675adb70ff5cd40c921a8907bab4f9e.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/Index.css">
+    <title>Tra cứu | Điện tử MD</title>
+</head>
+<body>
+    <header>
+    <img src="image\z7120951345012_4675adb70ff5cd40c921a8907bab4f9e.jpg" alt="logo" class="logo">
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+        <li class="dropdown">
+          <a href="#"><i class="fa-solid fa-laptop"></i> Sản phẩm ▼</a>
+          <ul class="submenu">
+            <li class="dropdown-sub">
+              <a href="Laptop.html">💻 Laptop ▸</a>
+              <ul class="submenu">
+                <li><a href="#">Dell</a></li>
+                <li><a href="#">Asus</a></li>
+                <li><a href="#">HP</a></li>
+                <li><a href="#">MSI</a></li>
+                <li><a href="#">Lenovo</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-sub">
+              <a href="DienThoai.html">📱 Điện thoại ▸</a>
+              <ul class="submenu">
+                <li><a href=""><i class="fa-brands fa-apple"></i> Iphone</a></li>
+                <li><a href=""><i class="fa-brands fa-android"></i> Samsung</a></li>
+                <li><a href="">Xiaomi</a></li>
+                <li><a href="">Oppp</a></li>
+                <li><a href="">Vivo</a></li>
+              </ul>
+            </li>
+            <li><a href="Tablet.html">📟 Tablet</a></li>
+            <li><a href="#">🎧 Tai nghe</a></li>
+            <li><a href="#">🔌 Phụ kiện</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-tools"></i> Bảo hành</a></li>
+        <li><a href="TraCuu.html"><i class="fa-solid fa-magnifying-glass"></i> Tra cứu</a></li>
+        <li><a href=""><i class="fa-solid fa-user"></i> Tài khoản</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Tìm kiếm sản phẩm...">
+      <button>🔍</button>
+    </div>
+    <div class="cart">
+      <button id="cartButton"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+  </header>
+
+  <main class="tracuu-container">
+    <h2>Tra cứu thông tin</h2>
+    <p>Nhập mã sản phẩm xem thông tin chi tiết.</p>
+
+    <div class="search-section">
+      <div class="search-box">
+        <label for="productCode"><i class="fa-solid fa-barcode"></i> Mã sản phẩm</label>
+        <input type="text" id="productCode" placeholder="Nhập mã sản phẩm...">
+        <button onclick="traCuuSanPham()">Tra cứu sản phẩm</button>
+      </div>
+
+      <p>Nhập mã đơn hàng của bạn để xem tra cứu thông tin.</p>
+
+      <div class="search-box">
+        <label for="orderCode"><i class="fa-solid fa-receipt"></i> Mã đơn hàng</label>
+        <input type="text" id="orderCode" placeholder="Nhập mã đơn hàng...">
+        <button onclick="traCuuDonHang()">Tra cứu đơn hàng</button>
+      </div>
+    </div>
+
+    <div id="result" class="result-box">
+      <p>Kết quả:</p>
+    </div>
+  </main>
+  <footer>
+    <h3>Tổng đài hỗ trợ miễn phí: </h3>
+    <p>Tổng đài CSKH: 1900 1508</p>
+    <p>Khiếu nại: 113</p>
+    <h3>Theo dõi chúng tôi qua: </h3>
+    <p>© 2025 Điện tử MD. Công ty TNHH BAOLAUBANDUOC1TYGOIME.</p><br>
+  </footer>
+</body>
+</html>
