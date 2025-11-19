@@ -361,6 +361,19 @@ footer {
   margin-bottom: 10px;
 }
 
+.buy-btn {
+  display: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #0056b3;
+}
+
 .search-section {
   display: flex;
   flex-direction: column;
